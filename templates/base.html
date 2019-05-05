@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <h4>Menu:</h4>
+    <ul>
+        <li><a href="/">Main</a></li>
+        <li><a href="/about">About Me</a></li>
+        <li><a href="/game">NEW! Guess the number game</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+    </ul>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

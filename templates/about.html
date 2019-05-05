@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 xmlns="http://www.w3.org/1999/html">This is my portfolio page</h1>
+    <form method="post" action="/about">
+        <input name="contact-name" placeholder="Vardas"/>
+        <br><br>
+        <input name="contact-emaai" placeholder="email"/>
+        <br><br>
+        <textarea name="contact-message" placeholder="Message">
+        </textarea>
+        <button type="submit">Siusti</button>
+    </form>
+
+    {% if name %}
+        <p> Sveikas, {{ name }}</p>
+    {% endif %}
+{% endblock %}
+
+
